@@ -72,12 +72,12 @@ public class PlayerMove : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.identity, Time.deltaTime * 15);
         }
 
-        _jumpFrameCounter += 1;
-        if (_jumpFrameCounter == 2)
-        {
-            Rigidbody.freezeRotation = false;
-            Rigidbody.AddRelativeTorque(0, 0, 20, ForceMode.VelocityChange);
-        }
+        //_jumpFrameCounter += 1;
+        //if (_jumpFrameCounter == 2)
+        //{
+        //    Rigidbody.freezeRotation = false;
+        //    Rigidbody.AddRelativeTorque(0, 0, 20, ForceMode.VelocityChange);
+        //}
         
     }
 
